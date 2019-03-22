@@ -1,0 +1,21 @@
+:host {
+
+    .folded:not(.unfolded) & {
+
+        .nav-link {
+
+            > .nav-link-title,
+            > .nav-link-badge {
+                opacity: 0;
+                transition: opacity 200ms ease;
+            }
+        }
+    }
+}
+
+.activeClass{
+    color :  #4D7CFE !important ; 
+
+    background-color : #ECF1FE ; 
+ 
+}

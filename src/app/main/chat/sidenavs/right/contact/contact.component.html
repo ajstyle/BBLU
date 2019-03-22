@@ -1,0 +1,67 @@
+<!-- SIDENAV HEADER -->
+<div class="sidenav-header" *ngIf="contact">
+
+    <!-- CONTACT TOOLBAR -->
+    <mat-toolbar style = 'background : white'>
+
+        <!-- TOOLBAR TOP -->
+        <mat-toolbar-row fxLayout="row">
+                <div fxLayout="column" fx-flex = '30' fxLayoutAlign="left center ">
+                    
+                    <div><mat-icon>arrow_back</mat-icon></div>
+                    </div>
+               <div fxLayout="column"  fxLayoutAlign="center center">
+                  
+               </div>
+            
+          
+
+        </mat-toolbar-row>
+        <!-- / TOOLBAR TOP -->
+
+        <!-- TOOLBAR BOTTOM -->
+        <mat-toolbar-row class="toolbar-bottom" fxLayout="column" fxLayoutAlign="center center">
+            <img [src]="contact.avatar" class="avatar contact-avatar huge" alt="{{contact.name}}"/>
+            <div class="contact-name my-8">
+                    <div>Jobs / Announcement</div>
+                    <div> Channel Description</div>
+            </div>
+        </mat-toolbar-row>
+        <!-- / TOOLBAR BOTTOM -->
+
+    </mat-toolbar>
+    <!-- / CONTACT TOOLBAR -->
+</div>
+
+<!-- SIDENAV CONTENT -->
+<h3 class="sidenav-content py-32 px-24" fxFlex fxLayout="column" *ngIf="contact">
+
+    <!-- CONTACT MOOD -->
+    <div class="secondary-text mb-8">File Shared</div>
+    <mat-list>
+            <mat-list-item>File Name</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>File Name 2</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>File Name 3</mat-list-item>
+            <mat-divider></mat-divider>
+          </mat-list>
+          <h3>Channel Notes</h3>
+
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum distinctio,
+               ex pariatur numquam doloremque dolor inventore? Natus ratione mollitia, </p>
+
+               <h3>Channel Notes</h3>
+               <mat-list>
+                    <mat-list-item>           
+                         <img [src]="contact.avatar" class="avatar contact-avatar" alt="{{contact.name}}"/>
+                         &nbsp;&nbsp;&nbsp; John Doe</mat-list-item>
+                    <mat-divider></mat-divider>
+                    <mat-list-item>            <img [src]="contact.avatar" class="avatar contact-avatar" alt="{{contact.name}}"/>
+                        &nbsp;&nbsp;&nbsp;John Smith</mat-list-item>
+                    <mat-divider></mat-divider>
+                 
+                  </mat-list>
+
+    <!-- / CONTACT MOOD -->
+

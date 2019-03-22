@@ -1,0 +1,11 @@
+
+
+// Import Fuse core library
+@import "@fuse/scss/core";
+
+// Import app.theme.scss
+@import "app/app.theme";
+
+body.theme-default .mat-stroked-button:not([disabled]) {
+  border-color: #2196f3;
+}
