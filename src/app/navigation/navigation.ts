@@ -7,7 +7,7 @@ export const navigation: FuseNavigation[] = [
                 title    : 'Message',
                 translate: 'Message',
                 type     : 'item',
-                icon     : 'email',
+                icon     : 'fa fa-envelope-o',
                 url      : '/message'
                 // badge    : {
                 //     title    : '25',
@@ -21,7 +21,7 @@ export const navigation: FuseNavigation[] = [
                 title    : 'Files',
                 translate: 'Files',
                 type     : 'item',
-                icon     : 'folder',
+                icon     : 'fa fa-folder-o',
                 url      : '/files'
                 // badge    : {
                 //     title    : '25',
@@ -35,7 +35,7 @@ export const navigation: FuseNavigation[] = [
                 title    : 'Files',
                 translate: 'Manage',
                 type     : 'item',
-                icon     : 'person',
+                icon     : 'fa fa-user-o',
                 url      : '/manage'
                 // badge    : {
                 //     title    : '25',

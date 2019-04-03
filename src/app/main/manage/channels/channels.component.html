@@ -1,0 +1,78 @@
+<div fxLayout="column" >
+    <div fxLayout="row"  fxLayoutAlign="space-between center" fxFlex="100" style = 'padding-top: 50px;padding-bottom: 15px;' >
+      
+      <div fxLayout = 'column' fxFlex = '80' fxFlexOffset = '6' >
+      <h4> Channels</h4>
+      </div>
+      <div fxLayout = 'column' fxFlex = '20'>
+          <button mat-flat-button style = 'background : #4D7CFE ; color : white' (click) = 'addNewChannel()' >
+             <mat-icon> add </mat-icon> Add New Channel  </button>
+
+        </div>
+    </div>
+
+
+
+        <div fxLayout="row"  fxLayoutAlign="space-between center" fxFlex="100" >
+           
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+        <!--- Note that these columns can be defined in any order.
+              The actual rendered columns are set as a property on the row definition" -->
+      
+        <!-- Position Column -->
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef> Name </th>
+          <td mat-cell *matCellDef="let element"> {{element.name}}
+            <mat-icon style = 'font-size: 17px; cursor : pointer;
+            margin-left: 6px;
+            color: gray;
+            margin-top: 2px; position: relative; bottom: -3px;'>edit</mat-icon> </td>
+        </ng-container>
+      
+        <!-- Name Column -->
+        <ng-container matColumnDef="description">
+          <th mat-header-cell *matHeaderCellDef> Description </th>
+          <td mat-cell *matCellDef="let element"> {{element.description}} 
+            <mat-icon style = 'font-size: 17px;cursor : pointer;
+            margin-left: 6px;
+            color: gray;
+            margin-top: 2px; position: relative; bottom: -3px;'>edit</mat-icon>
+          </td>
+        </ng-container>
+      
+        <!-- Weight Column -->
+        <ng-container matColumnDef="users">
+          <th mat-header-cell *matHeaderCellDef> Users </th>
+          <td mat-cell *matCellDef="let element">        <button mat-stroked-button color="accent" style = 'color : black'  (click) = 'allUsers()'> View All Users  </button>
+          </td>
+        </ng-container>
+      
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="who">
+          <th mat-header-cell *matHeaderCellDef> Who can Subscribe ? </th>
+          <td mat-cell *matCellDef="let element"> 
+            <mat-form-field style = 'width : 90%'>
+              <mat-label>Only Selected</mat-label>
+              <mat-select>
+                <mat-option *ngFor="let subscriber of subscribers" [value]="subscriber.value">
+                  {{subscriber.viewValue}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field> </td>
+        </ng-container>
+        <ng-container matColumnDef="autojoin">
+            <th mat-header-cell *matHeaderCellDef> Autojoin </th>
+
+            <td mat-cell *matCellDef="let element"> <mat-slide-toggle  [color]="black">Yes</mat-slide-toggle>
+              <button mat-stroked-button color="accent"  style = 'color : black ; margin-left: 20px;' (click) = 'invite()' > Invite  </button>
+            </td>
+          </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+      
+      </div>
+</div>
+

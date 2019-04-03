@@ -1,0 +1,43 @@
+<div fxLayout="column" >
+    <div fxLayout="row"   fxFlex="100" style = 'position: relative;top: -16px;'  >
+            <div> <h4>  Export   </h4></div>  
+            <div style =     'position: relative;
+            z-index: 3;
+            font-size: 20px;
+            left: 236px;
+            top: 4px;
+            font-weight: 300;
+            cursor : pointer ; ' (click) = 'close()'>
+            <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+
+      </div>
+      <div fxLayout = 'row' fxFlex = '100'   style = 'margin-top: 30px;'>
+        <div class="form-group" style = 'width:100%'>
+            <div fxLayout = 'column' fxFlex = '100' fxLayoutAlign="space-around"  >
+          <div fxLayout="row" fxFlex="100"  >
+              <mat-checkbox>Complete Column Export</mat-checkbox>
+            </div>
+            <div fxLayout="row" fxFlex="100" style = 'margin-top: 15px;'  >
+            <mat-checkbox>Partial Column Export</mat-checkbox>
+            </div>
+            <div fxLayout="row" fxFlex="100"  style = 'margin-top: 15px;' >
+            <mat-checkbox>Type Columns</mat-checkbox>&nbsp;&nbsp;&nbsp;
+            <input type="text" class="form-control"  id="usr" style = 'height: 27px; width : 27px'>
+
+            </div>
+       
+          </div>
+
+        </div>
+    </div>
+    <div fxLayout = 'row' fxFlex = '100' fxLayoutAlign="end center"    style = 'margin-top: 20px;'>
+
+            <button mat-stroked-button style = 'color : #4D7CFE; background : white ; border-color : #4D7CFE' >Export  </button>
+
+    </div>
+
+    </div>
+
+
+

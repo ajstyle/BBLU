@@ -39,19 +39,66 @@
     <!-- CONTACT MOOD -->
     <div class="secondary-text mb-8">File Shared</div>
     <mat-list>
-            <mat-list-item>File Name</mat-list-item>
+            <mat-list-item>
+                    <div  fxFlex="row" >
+                            <div  fxFlex="column" fxFlex = '80' >
+                                                 
+                            File Name
+                            </div>
+                            <div  fxFlex="column" fxFlex = '20'>
+                                    <i class="fa fa-arrow-circle-o-down"
+                                    style = 'font-size: 25px;'
+                                     aria-hidden="true"></i>   
+                                <i class="fa fa-angle-right"  style = 'font-size: 25px; margin-left : 15px'   aria-hidden="true"></i>
+                            </div>
+                           
+                            
+                        </div>      
+
+            </mat-list-item>
+
             <mat-divider></mat-divider>
-            <mat-list-item>File Name 2</mat-list-item>
+            <mat-list-item>
+                    <div  fxFlex="row" >
+                            <div  fxFlex="column" fxFlex = '80' >
+                                                 
+                            File Name 2
+                            </div>
+                            <div  fxFlex="column" fxFlex = '20'>
+                                    <i class="fa fa-arrow-circle-o-down"
+                                    style = 'font-size: 25px;'
+                                     aria-hidden="true"></i>   
+                                <i class="fa fa-angle-right"  style = 'font-size: 25px; margin-left : 15px'   aria-hidden="true"></i>
+                            </div>
+                           
+                            
+                        </div>
+            </mat-list-item>
             <mat-divider></mat-divider>
-            <mat-list-item>File Name 3</mat-list-item>
+            <mat-list-item>
+                    <div  fxFlex="row" >
+                            <div  fxFlex="column" fxFlex = '80' >
+                                                 
+                            File Name 3
+                            </div>
+                            <div  fxFlex="column" fxFlex = '20'>
+                                    <i class="fa fa-arrow-circle-o-down"
+                                    style = 'font-size: 25px;'
+                                     aria-hidden="true"></i>   
+                                <i class="fa fa-angle-right"  style = 'font-size: 25px; margin-left : 15px'   aria-hidden="true"></i>
+                            </div>
+                           
+                            
+                        </div>
+            </mat-list-item>
             <mat-divider></mat-divider>
           </mat-list>
-          <h3>Channel Notes</h3>
+          <h4>Channel Notes</h4>
 
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum distinctio,
-               ex pariatur numquam doloremque dolor inventore? Natus ratione mollitia, </p>
+          <mat-hint style = 'margin-top: 20px ; font-size : 14px'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum distinctio,
+               ex pariatur numquam doloremque </mat-hint>
 
-               <h3>Channel Notes</h3>
+               <h4>Channel Notes</h4>
                <mat-list>
                     <mat-list-item>           
                          <img [src]="contact.avatar" class="avatar contact-avatar" alt="{{contact.name}}"/>
@@ -62,6 +109,12 @@
                     <mat-divider></mat-divider>
                  
                   </mat-list>
-
+                  <div fxLayout="row" fxLayoutAlign="end center"  style = 'padding-top: 14px'>
+                  
+                  
+                  <button mat-fab aria-label="Example icon-button with a heart icon">
+                        <mat-icon>add</mat-icon>
+                      </button>
+                      </div>
     <!-- / CONTACT MOOD -->
 

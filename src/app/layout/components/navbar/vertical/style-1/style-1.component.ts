@@ -18,7 +18,8 @@ export class NavbarVerticalStyle1Component implements OnInit, OnDestroy
 {
     fuseConfig: any;
     navigation: any;
-
+    background = '#00B94A'  ;  
+    text = 'Available' ; 
     // Private
     private _fusePerfectScrollbar: FusePerfectScrollbarDirective;
     private _unsubscribeAll: Subject<any>;
@@ -68,6 +69,8 @@ export class NavbarVerticalStyle1Component implements OnInit, OnDestroy
             });
 
         // Scroll to the active item position
+
+       
         this._router.events
             .pipe(
                 filter((event) => event instanceof NavigationEnd),
@@ -158,5 +161,17 @@ export class NavbarVerticalStyle1Component implements OnInit, OnDestroy
     toggleSidebarFolded(): void
     {
         this._fuseSidebarService.getSidebar('navbar').toggleFold();
+    }
+
+    changeStatus(event) {
+
+        if (event.checked) {
+            this.background = '#FC4C4C' ; 
+            this.text = 'Do not Disturb'
+            
+        }else {
+            this.background = '#00B94A' ; 
+            this.text = 'Available'
+        }
     }
 }

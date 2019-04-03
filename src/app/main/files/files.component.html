@@ -1,6 +1,7 @@
-<div fxLayout="column" fxLayoutAlign="start" fxFlex="100" >
-        <mat-tab-group > 
-            <mat-tab label="Person"> 
+<div fxLayout="column" fxLayoutAlign="start" fxFlex="100" style = '  background: #F5F6FA;' >
+        <mat-tab-group mat-align-tabs="center" style = 'padding : 30px '> 
+            <mat-tab label="Person" routerLinkActive #rla="routerLinkActive"
+            > 
                 <app-person></app-person>
               </mat-tab>
             <mat-tab label="Channel">  <app-channel></app-channel></mat-tab>
@@ -8,3 +9,5 @@
           </mat-tab-group>
         
         </div>
+
+        

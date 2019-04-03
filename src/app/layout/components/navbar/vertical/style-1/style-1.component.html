@@ -1,4 +1,4 @@
-<div class="navbar-top" [ngClass]="fuseConfig.layout.navbar.secondaryBackground">
+<div class="navbar-top" [style.background] = 'background'>
 
     <!-- <div class="logo">
         <img class="logo-icon" src="assets/images/logos/fuse.svg">
@@ -29,13 +29,24 @@
         <img class="avatar" src="assets/images/avatars/Velazquez.jpg">
     </div> -->
 
-    
-    <div class="user" fxLayout="column" fxLayoutAlign="space-between center" [ngClass]="fuseConfig.layout.navbar.secondaryBackground">
+  
+    <div class="user" fxLayout="column" fxLayoutAlign="space-between center" [style.background] = 'background'>
+  
+        <img src = '../../../../../../assets//images/logos//bblu.png' style = 'width: 107px;
+        position: relative;
+        top: -45px;
+        z-index: 999;' />
+        <div class="p username" style = ' color: white; top: -59px; position: relative;'>{{text}} </div>
 
-        <div class="h3 username" style = 'color : white ; margin-bottom : 15px '>Don't Disturb </div>
-
-        <mat-slide-toggle></mat-slide-toggle>
-        <div class="h3 username" style = 'color :white;margin-top : 10px'>Exception List </div>
+        <div style = 'position: relative;
+        top: -55px;'>
+        <mat-slide-toggle (change) = 'changeStatus($event)'></mat-slide-toggle>
+        </div>
+       
+        <div class="p username" style = '    color: white;
+        position: relative;
+        top: -51px;
+    '>Exception List </div>
       
 
     </div>

@@ -19,6 +19,7 @@ import { LayoutModule } from 'app/layout/layout.module';
 import { SampleModule } from 'app/main/sample/sample.module';
 import {FilesModule} from 'app/main/files/files.module' ; 
 import {ChatModule} from 'app/main/chat/chat.module' ; 
+import {ManageModule} from 'app/main/manage/chat.module' ; 
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { FakeDbService } from 'app/fake-db/fake-db.service';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
@@ -34,7 +35,7 @@ const appRoutes: Routes = [
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
     ],
     providers : [
         FakeDbService
@@ -70,6 +71,7 @@ const appRoutes: Routes = [
         LayoutModule,
         SampleModule,
         FilesModule,
+        ManageModule,
         ChatModule
 
     ],

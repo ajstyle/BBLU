@@ -2,25 +2,26 @@ import { Component, OnInit } from '@angular/core';
 
 import {SelectionModel} from '@angular/cdk/collections';
 
-export interface PeriodicElement {
-  name: string;
-  position: number;
-  weight: number;
-  symbol: string;
+export interface FileName {
+  position: number ; 
+  file_name: string;
+  DownloadLink: string;
+  FileOwner: string;
+  Date: string;
 }
 
-const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
-  {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},
-  {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'},
-  {position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be'},
-  {position: 5, name: 'Boron', weight: 10.811, symbol: 'B'},
-  {position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C'},
-  {position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N'},
-  {position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O'},
-  {position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F'},
-  {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
-];
+const ELEMENT_DATA: FileName[] = [
+  {'position' : 1 ,  'file_name' : 'main_file.pdf' , 'DownloadLink' : 'http://dd.filedownload.com/easu427rsw3' , 'FileOwner' : 'Saimon Dewan' , 'Date' : '02-02-2019'},
+  { 'position' : 2 , 'file_name' : 'main_file.pdf' , 'DownloadLink' : 'http://dd.filedownload.com/easu427rsw3' , 'FileOwner' : 'Saimon Dewan' , 'Date' : '02-02-2019'},
+  { 'position' : 3 , 'file_name' : 'main_file.pdf' , 'DownloadLink' : 'http://dd.filedownload.com/easu427rsw3' , 'FileOwner' : 'Saimon Dewan' , 'Date' : '02-02-2019'},
+  { 'position' : 4 , 'file_name' : 'main_file.pdf' , 'DownloadLink' : 'http://dd.filedownload.com/easu427rsw3' , 'FileOwner' : 'Saimon Dewan' , 'Date' : '02-02-2019'},
+  { 'position' : 5 , 'file_name' : 'main_file.pdf' , 'DownloadLink' : 'http://dd.filedownload.com/easu427rsw3' , 'FileOwner' : 'Saimon Dewan' , 'Date' : '02-02-2019'},
+  { 'position' : 6 , 'file_name' : 'main_file.pdf' , 'DownloadLink' : 'http://dd.filedownload.com/easu427rsw3' , 'FileOwner' : 'Saimon Dewan' , 'Date' : '02-02-2019'},
+  { 'position' : 7 , 'file_name' : 'main_file.pdf' , 'DownloadLink' : 'http://dd.filedownload.com/easu427rsw3' , 'FileOwner' : 'Saimon Dewan' , 'Date' : '02-02-2019'},
+  { 'position' : 8 , 'file_name' : 'main_file.pdf' , 'DownloadLink' : 'http://dd.filedownload.com/easu427rsw3' , 'FileOwner' : 'Saimon Dewan' , 'Date' : '02-02-2019'},
+  { 'position' : 9 , 'file_name' : 'main_file.pdf' , 'DownloadLink' : 'http://dd.filedownload.com/easu427rsw3' , 'FileOwner' : 'Saimon Dewan' , 'Date' : '02-02-2019'},
+  { 'position' : 10 , 'file_name' : 'main_file.pdf' , 'DownloadLink' : 'http://dd.filedownload.com/easu427rsw3' , 'FileOwner' : 'Saimon Dewan' , 'Date' : '02-02-2019'},
+  ];
 @Component({
   selector: 'app-myfiles',
   templateUrl: './myfiles.component.html',
@@ -31,7 +32,7 @@ export class MyfilesComponent implements OnInit {
 
   displayedColumns: string[] = ['select', 'File_Name', 'Download_Link', 'Date' , 'Original_Message'];
   dataSource = ELEMENT_DATA;
-  selection = new SelectionModel<PeriodicElement>(true, []);
+  selection = new SelectionModel<FileName>(true, []);
   constructor() { }
 
   ngOnInit() {
@@ -53,7 +54,7 @@ export class MyfilesComponent implements OnInit {
   }
 
   /** The label for the checkbox on the passed row */
-  checkboxLabel(row?: PeriodicElement): string {
+  checkboxLabel(row?: FileName): string {
     if (!row) {
       return `${this.isAllSelected() ? 'select' : 'deselect'} all`;
     }

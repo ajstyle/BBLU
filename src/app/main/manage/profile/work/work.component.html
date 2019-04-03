@@ -1,0 +1,65 @@
+<div style = 'width : 100%'>
+  
+    <div fxLayout="column"  >
+    
+    <div fxLayout="row" fxLayout = 'center' fxFlex="100" style = 'padding-top: 50px;padding-bottom: 15px;'  >
+        <div fxLayout="column" fxFlex = '90' >
+      <h4> Work and Email Import   </h4>   
+      </div>
+      <div fxLayout="column" fxFlex = '10' >
+          <button mat-flat-button style = 'background : #4D7CFE ; color : white' (click) = 'openForwardDialog()' > <mat-icon> add </mat-icon> Add </button>
+
+</div>
+    </div>
+    <div fxLayout="row" fxFlex='100'  >
+         <mat-card style = 'width : 100%'>
+            <mat-card-content >	
+              <mat-list role="list">
+                  <mat-list-item role="listitem">
+                      <div fxLayout = "row" fxFlex = '100' >
+
+                          <div fxLayout = 'column' fxFlex = '90' >
+      
+                          <p style = 'font-size: 14px;'>Email</p>
+                            </div>
+                            <div fxLayout = 'column' fxFlexOffset="10"   fxFlex = '10'>
+                                <p style = 'font-size: 14px;'>Action</p>
+                              </div>
+                         </div>
+                    </mat-list-item>
+                </mat-list>
+              <mat-divider></mat-divider>
+              <mat-list role="list" *ngFor = 'let item of data '>
+                
+                <mat-list-item role="listitem">
+                    <div fxLayout = "row" fxFlex = '100' >
+
+                    <div fxLayout = 'column' fxFlex = '80' >
+
+                    <p style = 'font-size: 14px;'>{{item.email}}</p>
+                    </div>
+                   
+                    <div fxLayout = 'column' fxFlexOffset="10"   fxFlex = '20'>
+
+                        <div style = 'display:flex; ' >
+                            <div  fxFlexOffset="60" style = 'width : 85%'>
+                              <i class="fa fa-minus-circle fa-2x"   style = 'color : #C64343' aria-hidden="true"></i>
+
+                            </div>
+                           
+                        </div>
+
+                  </div>
+                </div>
+                  </mat-list-item>
+               
+             
+                  <mat-divider></mat-divider>
+                </mat-list>
+            </mat-card-content>	
+         </mat-card>
+        </div>
+    
+      </div>
+    </div>
+    

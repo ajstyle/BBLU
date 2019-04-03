@@ -1,0 +1,136 @@
+<div style = 'width : 100%'>
+  
+    <div fxLayout="column"  >
+    
+    <div fxLayout="row" fxLayout = 'center' fxFlex="100" style = 'padding-top: 50px;padding-bottom: 15px;'  >
+     <h4> Drive Integartion   </h4>   
+    </div>
+    <div fxLayout="row" fxFlex='100'  >
+         <mat-card style = 'width : 100%'>
+            <mat-card-content >	
+             <div style = ' display : flex ;width : 100%' >
+              <div style = 'width : 90%'>
+                  <img src = '../../../../../assets/images/profile/google_drive.png' style = 'width: 43px; padding-bottom: 12px;' /> <span style = 'font-size: 20px;
+              font-weight: 600;'> Google Drive</span>
+              </div>
+              <div style = 'width : 10%'>
+                <button mat-flat-button style = 'background : #4D7CFE ; color : white' > <mat-icon> add </mat-icon> Add </button>
+                </div>
+              </div>
+              <mat-divider></mat-divider>
+              <mat-list role="list" *ngFor = 'let item of data '>
+             
+                <mat-list-item role="listitem">
+                    <div fxLayout = "row" fxFlex = '100' >
+
+                    <div fxLayout = 'column' fxFlex = '40' >
+
+                    <p style = 'font-size: 14px;'>{{item.email}}</p>
+                    </div>
+                    <div fxLayout = 'column' fxFlex = '40' style = 'display : flex'>
+                      <div style = 'display:flex; ' >
+                      <div style = 'width : 90%'>
+                    <input type = 'text' class = 'form-control' [disabled] = 'disabledText'[value] = 'item.email' >
+                      </div>
+                      <div style = 'width : 15%' >
+                        <mat-icon class = 'avatar' style = '  cursor: pointer;
+                        line-height: 2;
+                        height: 37px;
+                        background: #E6E6E6;
+                        margin-left: 10px;'(click) = 'toggleDisabled()' > edit </mat-icon>
+                      </div>
+                  </div>
+                    </div>
+                    <div fxLayout = 'column' fxFlexOffset="10"   fxFlex = '20'>
+
+                        <div style = 'display:flex; ' >
+                            <div  fxFlexOffset="60" style = 'width : 85%'>
+                              <i class="fa fa-minus-circle fa-2x"   style = 'color : #C64343' aria-hidden="true"></i>
+
+                            </div>
+                            <div style = 'width : 15%' >
+                              <p  style = 'font-size: 13px;
+                              margin-left: -5px;
+                              margin-top: 6px;
+                          '>Delete</p>
+
+                            </div>
+                        </div>
+
+                  </div>
+                </div>
+                  </mat-list-item>
+               
+             
+                  <mat-divider></mat-divider>
+                </mat-list>
+            </mat-card-content>	
+         </mat-card>
+        </div>
+        <div fxLayout="row" fxFlex='100'  >
+
+          <mat-card style = 'width : 100%'>
+            <mat-card-content >	
+       
+               <div style = ' display : flex ;width : 100%' >
+                  <div style = 'width : 90%'>
+                         <img src = '../../../../../assets/images/profile/dropbox.png' style = 'width: 43px; padding-bottom: 12px;' /> <span style = 'font-size: 20px;
+              font-weight: 600;'> Dropbox</span>
+                  </div>
+                  <div style = 'width : 10%'>
+                    <button mat-flat-button style = 'background : #4D7CFE ; color : white' > <mat-icon> add </mat-icon> Add </button>
+                    </div>
+                  </div>
+              <mat-divider></mat-divider>
+              <mat-list role="list" *ngFor = 'let item of data '>
+             
+                <mat-list-item role="listitem">
+                    <div fxLayout = "row" fxFlex = '100' >
+
+                    <div fxLayout = 'column' fxFlex = '40' >
+
+                    <p style = 'font-size: 14px;'>{{item.email}}</p>
+                    </div>
+                    <div fxLayout = 'column' fxFlex = '40' style = 'display : flex'>
+                      <div style = 'display:flex; ' >
+                      <div style = 'width : 90%'>
+                    <input type = 'text' class = 'form-control' [disabled] = 'disabledText'[value] = 'item.email' >
+                      </div>
+                      <div style = 'width : 15%' >
+                        <mat-icon class = 'avatar' style = '  cursor: pointer;
+                        line-height: 2;
+                        height: 37px;
+                        background: #E6E6E6;
+                        margin-left: 10px;'(click) = 'toggleDisabled()' > edit </mat-icon>
+                      </div>
+                  </div>
+                    </div>
+                    <div fxLayout = 'column' fxFlexOffset="10"   fxFlex = '20'>
+
+                        <div style = 'display:flex; ' >
+                            <div  fxFlexOffset="60" style = 'width : 85%'>
+                              <i class="fa fa-minus-circle fa-2x"   style = 'color : #C64343' aria-hidden="true"></i>
+
+                            </div>
+                            <div style = 'width : 15%' >
+                              <p  style = 'font-size: 13px;
+                              margin-left: -5px;
+                              margin-top: 6px;
+                          '>Delete</p>
+
+                            </div>
+                        </div>
+
+                  </div>
+                </div>
+                  </mat-list-item>
+               
+             
+                  <mat-divider></mat-divider>
+                </mat-list>
+            </mat-card-content>	
+         </mat-card>
+      </div>
+      </div>
+    </div>
+    

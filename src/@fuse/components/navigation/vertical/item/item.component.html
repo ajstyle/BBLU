@@ -2,7 +2,7 @@
 
     <!-- item.url -->
     <a class="nav-link" [ngClass]="item.classes" *ngIf="item.url && !item.externalUrl && !item.function"
-       [routerLink]="[item.url]" [routerLinkActive]="['activeClass']" style = 'display : grid ; text-align: center; margin-bottom: 5px;'
+       [routerLink]="[item.url]" [routerLinkActive]="['activeClass']" style = 'display : grid ; text-align: center; margin-bottom: 10px;'
        [routerLinkActiveOptions]="{exact: item.exactMatch || false}"
        [target]="item.openInNewTab ? '_blank' : '_self'">
         <ng-container *ngTemplateOutlet="itemContent"></ng-container>
@@ -36,9 +36,10 @@
         <ng-container *ngTemplateOutlet="itemContent"></ng-container>
     </a>
 
-    <ng-template #itemContent>
-        <mat-icon class="nav-link-icon" style = 'width:100% ; text-align : center ' *ngIf="item.icon">{{item.icon}}</mat-icon>
-        <span class="nav-link-title" [translate]="item.translate">{{item.title}}</span>
+    <ng-template #itemContent >
+        <i class={{item.icon}} class="nav-link-icon"  style = 'width:100% ; text-align : center ' *ngIf="item.icon" aria-hidden="true"></i>
+
+        <span class="nav-link-title" [translate]="item.translate" style = 'font-weight: 400'>{{item.title}}</span>
         <span class="nav-link-badge" *ngIf="item.badge" [translate]="item.badge.translate"
               [ngStyle]="{'background-color': item.badge.bg,'color': item.badge.fg}">
             {{item.badge.title}}

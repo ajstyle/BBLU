@@ -1,0 +1,49 @@
+<div fxLayout="column" >
+    <div fxLayout="row"   fxFlex="100" style = 'position: relative;top: -16px;'  >
+            <div> <h4>  Invite Employers   </h4></div>  
+            <div style = 'position: relative;
+            z-index: 3;
+            font-size: 20px;
+            left: 350px;
+            top : 2px  ; 
+            cursor : pointer ; ' (click) = 'close()'>
+            <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+
+      </div>
+      <div fxLayout = 'row' fxFlex = '100'   style = 'margin-top: 30px;'>
+        <div class="form-group" style = 'width:100%' >
+            <div fxLayout = 'column' fxFlex = '100' fxLayoutAlign="space-around"  >
+          <div fxLayout="row" fxFlex="100"  >
+            Invitation Link :&nbsp;&nbsp;  <a>http://www.example.com/linklocation</a> &nbsp; &nbsp; <i class="fa fa-clone" aria-hidden="true"></i>
+
+
+          </div>
+
+          <div fxLayout="row" fxFlex="100"  style = 'margin-top: 20px;'>
+            Must Have Emails : <mat-hint>i.e @brizer.io or @brizer.com</mat-hint>
+
+            </div>
+            <div fxLayout="row" fxFlex="100"  style = 'margin-top: 25px;'>
+                <tag-input [(ngModel)]='items' theme='bootstrap' style = 'width : 100% ;  '></tag-input>
+              
+              </div>
+
+          <div fxLayout="row" fxFlex="100"  style = 'margin-top: 25px;'>
+              <input type="text" class="form-control" placeholder = 'Password' id="usr" style = 'height: 47px;'>
+
+          </div>
+          </div>
+
+        </div>
+    </div>
+    <div fxLayout = 'row' fxFlex = '100' fxLayoutAlign="end center"    style = 'margin-top: 20px;'>
+
+            <button mat-stroked-button style = 'color : #4D7CFE; background : white ; border-color : #4D7CFE' >Invite  </button>
+
+    </div>
+
+    </div>
+
+
+

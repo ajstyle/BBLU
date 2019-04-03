@@ -1,0 +1,60 @@
+<div fxLayout="column" >
+    <div fxLayout="row"   fxFlex="100" style = 'position: relative;top: -16px;'  >
+            <div> <h4>  Add New Users   </h4></div>  
+            <div style = 'position: relative;
+            z-index: 3;
+            font-size: 20px;
+            left: 360px;
+            top : 2px  ; 
+            cursor : pointer ; ' (click) = 'close()'>
+            <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+
+      </div>
+      <div fxLayout = 'row' fxFlex = '100'   style = 'margin-top: 30px;'>
+        <div class="form-group" style = 'width:100%'>
+            <div fxLayout = 'column' fxFlex = '100' fxLayoutAlign="space-around"  >
+          <div fxLayout="row" fxFlex="100"  >
+              <input type="text" class="form-control" placeholder = 'Name' id="usr" style = 'height: 47px;'>
+
+          </div>
+          <div fxLayout="row" fxFlex="100"  style = 'margin-top: 15px;'>
+              <input type="text" class="form-control" placeholder = 'Email' id="usr" style = 'height: 47px;'>
+          </div>
+          <div fxLayout="row" fxFlex="100"  style = 'margin-top: 15px;'>
+              <input type="text" class="form-control" placeholder = 'Password' id="usr" style = 'height: 47px;'>
+          </div>
+          <div fxLayout="row" fxFlex="100"  style = 'margin-top: 15px;'>
+              <input type="text" class="form-control" placeholder = 'Department' id="usr" style = 'height: 47px;'>
+          </div>
+          <div fxLayout="row" fxFlex="100"  style = 'margin-top: 15px;'>
+            <b><span class = 'text' style = 'font-size: 16px;'>Roll</span> </b>&nbsp; &nbsp; 
+            <mat-radio-group aria-label="Select an option">
+               
+              <mat-radio-button value="1"> <span class = 'text'>Users </span> </mat-radio-button>&nbsp; &nbsp; 
+                <mat-radio-button value="2"><span class = 'text'>Employee </span></mat-radio-button>&nbsp;&nbsp;  
+                <mat-radio-button value="2"><span class = 'text'>Admin </span> </mat-radio-button>&nbsp; &nbsp; 
+                <mat-radio-button value="2"><span class = 'text'>Super Admin </span></mat-radio-button>
+
+              </mat-radio-group>
+              
+          </div>
+          </div>
+
+        </div>
+    </div>
+    <div fxLayout = 'row' fxFlex = '100' style = 'margin-top: 20px;'>
+      <div fxLayout = 'column' fxFlex = '70'  >
+          <mat-checkbox><span class = 'text'>Email the new users his/her logins </span></mat-checkbox>
+
+      </div>
+      <div fxLayout = 'column' fxFlex = '30'  >
+          <button mat-stroked-button style = 'color : #4D7CFE; background : white ; border-color : #4D7CFE  ;  '  >Create Users  </button>
+
+      </div>
+    </div>
+
+    </div>
+
+
+

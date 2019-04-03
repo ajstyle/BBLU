@@ -1,0 +1,80 @@
+<div fxLayout="column" >
+  <div fxLayout="row"   fxFlex="100" style = 'position: relative;top: -16px;'  >
+          <div> <h4>  Channel Users   </h4></div>  
+          <div style = 'position: relative;
+          z-index: 3;
+          font-size: 20px;
+          left: 360px;
+          top : 2px  ; 
+          cursor : pointer ; ' (click) = 'close()'>
+          <i class="fa fa-times" aria-hidden="true"></i>
+          </div>
+
+    </div>
+
+<div fxLayout = 'row' fxFlex = '100'   style = 'margin-top: 30px;'>
+  <div class="form-group" style = 'width:100%' >
+      <div fxLayout = 'column' fxFlex = '100' fxLayoutAlign="space-around"  >
+    <div fxLayout="row" fxFlex="100"  >
+        <div  class="search-wrapper" fxFlex fxLayout="row" fxLayoutAlign="start center">
+
+            <div class="search" fxFlex fxLayout="row" fxLayoutAlign="start center" style = 'height : 50px' >
+                <input type="text" placeholder="Search"  fxFlex>
+                <div class = 'searchavatar' >
+                <mat-icon   style = 'color: black;
+                position: relative;
+                top: -3px;
+            ' class="s-16 secondary-text ">search</mat-icon>
+                  </div>
+                  
+            </div>
+          </div>
+    </div>
+
+      <div fxLayout="row" fxFlex="100"  style = 'margin-top: 25px;'>
+          
+        <mat-list role="list" style = 'width :100%'>
+            <mat-divider></mat-divider>
+            <div fxLayout="column" fxFlex="70" >
+                <div class="avatar-wrapper" fxFlex="0 1 auto" fxLayoutAlign="center center">
+                    <img class="avatar" src = '../../../../../assets/images/avatars/Abbott.jpg'/>
+                    <mat-list-item role="listitem"> Sai Mohit</mat-list-item>
+                  </div>
+             
+            </div>  
+            <div fxLayout="column" fxFlex="30" style = 'top: 13px;
+            position: relative;' >
+              <div  fxFlex="0 1 auto" fxLayoutAlign="center center">
+                      
+             <a href = ''>Admin </a>&nbsp;&nbsp;&nbsp;
+              <a href = '' style = 'color : red'>Remove </a>
+              </div>
+            </div>
+            </mat-list>
+            </div>
+      
+            <mat-divider></mat-divider>
+            <div fxLayout="row" fxFlex="100" >
+                <mat-list role="list" style = 'width :100%'>
+
+              <div fxLayout="column" fxFlex="70" >
+                <div class="avatar-wrapper" fxFlex="0 1 auto" fxLayoutAlign="center center">
+                  <img class="avatar" src = '../../../../../assets/images/avatars/Abbott.jpg'/>
+                  <mat-list-item role="listitem"> Talasi</mat-list-item>
+                </div>
+             
+              </div>  
+                <div fxLayout="column" fxFlex="30" style = 'top: 13px;
+                position: relative;'>
+        <div  fxFlex="0 1 auto" fxLayoutAlign="center center">
+
+                  <a href = ''>Admin </a>&nbsp;&nbsp;&nbsp;
+                  <a href = '' style = 'color : red'>Remove </a>
+              </div>
+                  </div>
+                </mat-list>
+
+                </div>
+    </div>
+  </div>
+</div>

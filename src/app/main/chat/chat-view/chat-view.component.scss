@@ -104,7 +104,6 @@ chat-view {
 
                     &.me {
                         padding-left: 40px;
-
                         .avatar {
                             order: 2;
                             margin: 0 0 0 16px;
@@ -215,4 +214,45 @@ chat-view {
             }
         }
     }
+}
+
+body.theme-default chat-view .chat #chat-content .message-row.contact .bubble {
+    background-color:#F5F6FA;
+    color: black;
+}
+
+body.theme-default chat-view .chat #chat-content .message-row.me .bubble {
+    background-color: #ECF1FE;
+    color: black;
+}
+
+chat-view .chat #chat-content .chat-messages .message-row.me .bubble {
+     border-top-left-radius: 0px; 
+     border-bottom-left-radius: 0px; 
+     border-top-right-radius: 0px; 
+     border-bottom-right-radius: 0px; 
+}
+
+chat-view .chat #chat-content .chat-messages .message-row.me.last-of-group .bubble {
+     border-bottom-right-radius: 0px; 
+}
+chat-view .chat #chat-content .chat-messages .message-row.me.first-of-group .bubble {
+     border-top-right-radius: 0px; 
+}
+
+chat-view .chat #chat-content .chat-messages .message-row.contact.last-of-group .bubble {
+    border-bottom-left-radius: 0px;
+}
+
+hat-view .chat #chat-content .chat-messages .message-row.contact.first-of-group .bubble {
+    border-top-left-radius: 0px;
+}
+
+.mat-toolbar {
+     background: white ; 
+    color: black
+}
+body.theme-default .mat-toolbar {
+     background: white ; 
+    color: rgba(0, 0, 0, 0.87);
 }

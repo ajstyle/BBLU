@@ -1,0 +1,77 @@
+*{
+  width : 100% ; 
+}
+
+input[type=text], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+div {
+select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.ng-star-inserted{
+  width : 100% ; 
+}
+
+:host(app-profile) {
+  width : 100% ; 
+}
+.selectBox {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.mat-tab-label-active{
+  background : white ; 
+  color : blue ; 
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+mat-tab-label-container {
+  mat-tab-list {
+    mat-tab-labels {
+      mat-tab-label-active{
+        background : white ; 
+        color : blue ; 
+      }
+    }
+  }
+}

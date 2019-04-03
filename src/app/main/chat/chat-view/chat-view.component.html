@@ -100,14 +100,25 @@
                   fxFlex fxLayout="row" fxLayoutAlign="start center">
 
                 <mat-form-field class="message-text" fxFlex floatLabel="never" appearance="standard">
-                    <textarea matInput #replyInput placeholder="Type your message"
+                    <textarea matInput #replyInput placeholder="Type Here"
                               ngModel name="message" [rows]="1" [matTextareaAutosize]="true"></textarea>
                 </mat-form-field>
 
-                <button class="send-message-button" mat-icon-button type="submit" aria-label="Send message">
-                    <mat-icon class="secondary-text">send</mat-icon>
+               
+                <button class="send-message-button" mat-icon-button    aria-label="Send message" style = '    position: absolute;
+                left: -24px;
+                bottom: 21px;'>
+                    <mat-icon>mood</mat-icon>
                 </button>
-
+                <button class="send-message-button" mat-icon-button    aria-label="Send message" style = 'position: absolute;
+                right: 80px;
+                bottom: 21px;'
+ >
+                    <mat-icon>attach_file</mat-icon>
+                </button>
+                <button class="send-message-button" mat-flat-button color="accent"  type="submit" aria-label="Send message" >
+                    Send
+                </button>
             </form>
 
         </div>

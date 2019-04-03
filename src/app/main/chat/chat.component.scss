@@ -1,12 +1,15 @@
 @import "src/@fuse/scss/fuse";
 
+.container {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
 #chat {
 
     .center {
-        padding: 32px !important;
-        max-width: 1400px;
-        margin: 0 auto;
-
+     
         @include media-breakpoint('lt-lg') {
             padding: 0 !important;
         }

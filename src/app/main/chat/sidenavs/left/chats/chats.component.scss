@@ -1,10 +1,17 @@
 @import "src/@fuse/scss/fuse";
 
+
 chat-chats-sidenav {
     display: flex;
     flex: 1;
     flex-direction: column;
 
+    .mat-tab-label {
+   
+        min-width: 78px;
+        color : blue !important;
+        
+    }
     .sidenav-header {
 
         mat-toolbar {

@@ -7,6 +7,10 @@ chat-contact-sidenav {
     overflow: auto;
     -webkit-overflow-scrolling: touch;
 
+    p {
+        font-size: 12px;
+        font-weight: 400;
+    }
     mat-toolbar {
 
         .toolbar-bottom {

@@ -6,4 +6,43 @@ div {
 table {
   width: 100% !important;
 }
+.search-wrapper{
+.search {
+  height: 36px;
+  line-height: 36px;
+  padding: 8px;
+  font-size: 13px;
+  border-radius: 18px;
+  border: 1px solid ;
+  border-color: #e6e6e6  ; 
+  overflow: hidden;
 
+  .mat-icon {
+      margin: 0;
+  }
+
+  input {
+      padding: 0 12px 0 8px;
+      height: 36px;
+      border: none;
+  }
+}
+}
+button.users:hover {
+  background : #4D7DFE ; 
+  color: white !important ; 
+
+}
+
+.searchavatar {
+  /* width: 2px; */
+  min-width: 28px;
+  height: 28px;
+  line-height: 40px;
+  margin: 0 8px 0 0;
+  border-radius: 50%;
+  font-size: 17px;
+  font-weight: 600;
+  text-align: center;
+  margin-right: -6px;
+}

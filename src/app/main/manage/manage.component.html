@@ -1,0 +1,47 @@
+<div id="manage" class="page-layout carded fullwidth inner-scroll container" >
+
+    <!-- TOP BACKGROUND -->
+    <!-- / TOP BACKGROUND -->
+
+    <!-- CENTER -->
+    <div class="center">
+
+        <!-- CONTENT CARD -->
+        <div class="content-card">
+
+            <mat-sidenav-container>
+
+                <!-- LEFT SIDENAV -->
+                <mat-sidenav #drawer class="sidenav" position="start" opened="true" mode="side"
+                             fuseMatSidenavHelper="chat-left-sidenav" matIsLockedOpen="gt-md">
+                             <mat-nav-list>
+                                    <a *ngFor = 'let navbar of navbarArray'   mat-list-item [routerLink]='navbar.link' routerLinkActive="active-link">
+                                           {{navbar.name}}
+                                    </a>
+
+                                  </mat-nav-list>              
+                                  </mat-sidenav>
+                <!-- / LEFT SIDENAV -->
+
+                <!-- CONTENT -->
+                <mat-sidenav-content> 
+                    <div style = "width : 100% ; height : 100% ;     background: #F5F6FA;">
+                    <router-outlet></router-outlet>
+                    </div>
+                </mat-sidenav-content>
+
+                <!-- / CONTENT -->  
+
+                <!-- RIGHT SIDENAV -->
+              
+                <!-- / RIGHT SIDENAV -->
+
+            </mat-sidenav-container>
+
+        </div>
+        <!-- / CONTENT CARD -->
+
+    </div>
+    <!-- / CENTER -->
+
+</div>
